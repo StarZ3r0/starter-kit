@@ -1,0 +1,23 @@
+{
+  "name": "starter-kit",
+  "version": "0.1.0",
+  "homepage": "https://github.com/StarZ3r0/starter-kit",
+  "authors": [
+    "Lakatos Tibor <lakatos.tibor@starmail.hu>"
+  ],
+  "description": "boilerplate for starting to build web apps",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "fontawesome#~4.5.0",
+    "holderjs": "~2.9.1",
+    "jquery": "2.2.0"
+  }
+}
