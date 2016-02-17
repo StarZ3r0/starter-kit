@@ -24,21 +24,21 @@ html {
 }
 
 ::-webkit-input-placeholder {
-  color: #cccccc;
+    color: #cccccc;
 }
 
 :-moz-placeholder {
-  color: #cccccc;
-  opacity: 1;
+    color: #cccccc;
+    opacity: 1;
 }
 
 ::-moz-placeholder {
-  color: #cccccc;
-  opacity: 1;
+    color: #cccccc;
+    opacity: 1;
 }
 
 :-ms-input-placeholder {
-  color: #cccccc;
+    color: #cccccc;
 }
 
 hr {
