@@ -72,8 +72,16 @@ textarea {
 /* Typography */
 
 body  {
+    text-rendering: optimizeSpeed;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     text-rendering: optimizeLegibility;
-    /* text-rendering: optimizeSpeed; */
 }
 
 p {
@@ -147,6 +155,11 @@ abbr[title]:hover {
 
 .clearfix:after {
     clear: both;
+}
+
+.ios-btn-fix {
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
 }
 
 
