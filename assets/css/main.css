@@ -11,6 +11,8 @@ html {
   font-size: 1em;
   line-height: 1.4;
   font-family: Arial, sans-serif;
+  /* prevents fonts from getting bigger when rotating to landscape */
+  -webkit-text-size-adjust: 100%;
 }
 
 ::-moz-selection {
@@ -111,7 +113,6 @@ pre {
   word-wrap: break-word;
 }
 
-/* Custom styles */
 /* Helper classes */
 .no-focus:focus {
   outline-width: 0;
@@ -223,5 +224,6 @@ pre {
     page-break-after: avoid;
   }
 }
+/* Custom styles */
 
 /*# sourceMappingURL=main.css.map */
