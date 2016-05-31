@@ -71,6 +71,10 @@ textarea {
   resize: vertical;
 }
 
+img {
+  vertical-align: middle;
+}
+
 /* Typography */
 body {
   text-rendering: optimizeSpeed;
@@ -160,6 +164,12 @@ pre {
 .ios-btn-fix {
   -webkit-appearance: none;
   -webkit-border-radius: 0;
+}
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /* Print styles */
