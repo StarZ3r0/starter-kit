@@ -6,7 +6,7 @@ Boilerplate for starting to build web apps.
 - [ ] add grid system
 - [ ] styling form elements
 - [ ] add scss helper functions and mixins
-- [ ] add html5 skeleton
+- [x] add html5 skeleton
 - [ ] improve accessibility
 
 ## License
