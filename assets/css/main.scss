@@ -185,6 +185,13 @@ pre {
     box-shadow: none !important;
 }
 
+.noselect {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
 /* Print styles */
 
 @media print {
