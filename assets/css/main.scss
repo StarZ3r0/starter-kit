@@ -2,6 +2,7 @@
 
 $selection-background: #b3d4fc;
 $placeholder-color: #cccccc;
+$text-color: #000;
 
 /* Base styles */
 
@@ -12,7 +13,7 @@ $placeholder-color: #cccccc;
 }
 
 html {
-    color: #222;
+    color: $text-color;
     font-size: 1em;
     line-height: 1.4;
     font-family: Arial, sans-serif;
@@ -46,6 +47,21 @@ html {
 
 :-ms-input-placeholder {
     color: $placeholder-color;
+}
+
+::-ms-clear, ::-ms-reveal {
+    display: none;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+    -webkit-text-fill-color: $text-color;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
 }
 
 hr {
