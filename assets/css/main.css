@@ -15,35 +15,24 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 
+::selection,
 ::-moz-selection {
   background: #b3d4fc;
   text-shadow: none;
 }
 
-::selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-::-webkit-input-placeholder {
-  color: #cccccc;
-}
-
-:-moz-placeholder {
-  color: #cccccc;
-  opacity: 1;
-}
-
-::-moz-placeholder {
-  color: #cccccc;
-  opacity: 1;
-}
-
+::-webkit-input-placeholder,
+:-moz-placeholder,
 :-ms-input-placeholder {
   color: #cccccc;
 }
 
-::-ms-clear, ::-ms-reveal {
+:-moz-placeholder {
+  opacity: 1;
+}
+
+::-ms-clear,
+::-ms-reveal {
   display: none;
 }
 
@@ -192,6 +181,10 @@ pre {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+
+a[disabled] {
+  pointer-events: none;
 }
 
 /* Responsive helpers  */

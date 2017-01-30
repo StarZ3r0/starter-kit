@@ -21,35 +21,24 @@ html {
     -webkit-text-size-adjust: 100%;
 }
 
+::selection,
 ::-moz-selection {
     background: $selection-background;
     text-shadow: none;
 }
 
-::selection {
-    background: $selection-background;
-    text-shadow: none;
-}
-
-::-webkit-input-placeholder {
-    color: $placeholder-color;
-}
-
-:-moz-placeholder {
-    color: $placeholder-color;
-    opacity: 1;
-}
-
-::-moz-placeholder {
-    color: $placeholder-color;
-    opacity: 1;
-}
-
+::-webkit-input-placeholder,
+:-moz-placeholder,
 :-ms-input-placeholder {
     color: $placeholder-color;
 }
 
-::-ms-clear, ::-ms-reveal {
+:-moz-placeholder {
+    opacity: 1;
+}
+
+::-ms-clear,
+::-ms-reveal {
     display: none;
 }
 
@@ -60,8 +49,8 @@ input:-webkit-autofill {
 
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
-  -webkit-appearance: none; 
-  margin: 0; 
+    -webkit-appearance: none; 
+    margin: 0; 
 }
 
 hr {
@@ -200,6 +189,10 @@ pre {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
+
+a[disabled] {
+    pointer-events: none;
 }
 
 /* Responsive helpers  */
