@@ -279,6 +279,31 @@ use:
     page-break-after: avoid;
   }
 }
+/* Components */
+/*
+Modal window 
+use:
+<div class="overlay"><div class="modal">Lorem ipsum</div></div>
+*/
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 99;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal {
+  background: #eee;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+}
+
 /* Custom styles */
 
 /*# sourceMappingURL=main.css.map */
