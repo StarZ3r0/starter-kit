@@ -102,6 +102,10 @@ a {
   text-decoration: none;
 }
 
+a[href]:not([class]) {
+  color: #07c;
+}
+
 blockquote {
   font-style: italic;
 }

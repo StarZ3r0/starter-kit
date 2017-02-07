@@ -3,6 +3,7 @@
 $selection-background: #b3d4fc;
 $placeholder-color: #cccccc;
 $text-color: #000;
+$link-color: #07c;
 
 /* Base styles */
 
@@ -107,6 +108,11 @@ p {
 
 a {
     text-decoration: none;
+}
+
+// default link color
+a[href]:not([class]) {    
+    color: $link-color;    
 }
 
 blockquote {
