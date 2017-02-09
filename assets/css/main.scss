@@ -197,6 +197,16 @@ pre {
     user-select: none;
 }
 
+.word-wrap {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-all;
+
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+}
+
 a[disabled] {
     pointer-events: none;
 }
