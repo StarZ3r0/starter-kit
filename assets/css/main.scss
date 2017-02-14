@@ -4,6 +4,7 @@ $selection-background: #b3d4fc;
 $placeholder-color: #cccccc;
 $text-color: #000;
 $link-color: #07c;
+$hr-color: #ccc;
 
 /* Base styles */
 
@@ -15,7 +16,7 @@ $link-color: #07c;
 
 html {
     color: $text-color;
-    font-size: 1em;
+    font-size: 16px;
     line-height: 1.4;
     font-family: Arial, sans-serif;
     /* prevents fonts from getting bigger when rotating to landscape */
@@ -58,7 +59,7 @@ hr {
     display: block;
     height: 1px;
     border: 0;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid $hr-color;
     margin: 1em 0;
     padding: 0;
 }
@@ -110,6 +111,10 @@ a {
     text-decoration: none;
 }
 
+a[disabled] {
+    pointer-events: none;
+}
+
 // default link color
 a[href]:not([class]) {    
     color: $link-color;    
@@ -144,6 +149,11 @@ pre {
     display: none !important;
 }
 
+.invisible {
+    visibility: hidden;
+}
+
+// hide only visually, but have it available for screenreaders
 .visuallyhidden {
     border: 0;
     clip: rect(0 0 0 0);
@@ -155,6 +165,7 @@ pre {
     width: 1px;
 }
 
+// extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
     clip: auto;
@@ -163,10 +174,6 @@ pre {
     overflow: visible;
     position: static;
     width: auto;
-}
-
-.invisible {
-    visibility: hidden;
 }
 
 .clearfix:before,
@@ -205,10 +212,6 @@ pre {
     -ms-hyphens: auto;
     -webkit-hyphens: auto;
     hyphens: auto;
-}
-
-a[disabled] {
-    pointer-events: none;
 }
 
 /* Responsive helpers  */
