@@ -119,15 +119,11 @@ p {
 
 a {
     text-decoration: none;
+    color: $link-color;
 }
 
 a[disabled] {
     pointer-events: none;
-}
-
-// default link color
-a[href]:not([class]) {    
-    color: $link-color;    
 }
 
 blockquote {
@@ -147,6 +143,10 @@ abbr[title]:hover {
 pre {
     white-space: pre-wrap;
     word-wrap: break-word;
+}
+
+strong {
+    font-weight: 700;
 }
 
 /* Helper classes */
