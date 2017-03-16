@@ -181,14 +181,10 @@ strong {
     width: auto;
 }
 
-.clearfix:before,
 .clearfix:after {
-    content: " ";
-    display: table;
-}
-
-.clearfix:after {
-    clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .ios-btn-fix {
