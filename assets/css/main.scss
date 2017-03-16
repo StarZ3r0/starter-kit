@@ -1,10 +1,9 @@
 /* Variables */
 
 $selection-background: #b3d4fc;
-$placeholder-color: #cccccc;
+$base-color: #ccc;
 $text-color: #000;
 $link-color: #07c;
-$hr-color: #ccc;
 
 /* Base styles */
 
@@ -34,16 +33,16 @@ html {
 
 /* placeholder color */
 ::-webkit-input-placeholder {
-    color: $placeholder-color;
+    color: $base-color;
 }
 
 ::-moz-placeholder {
-    color: $placeholder-color;
+    color: $base-color;
     opacity: 1;
 }
 
 :-ms-input-placeholder {
-    color: $placeholder-color;
+    color: $base-color;
 }
 
 /* hide clear button of a text / password input control (IE10+) */
@@ -69,7 +68,7 @@ hr {
     display: block;
     height: 1px;
     border: 0;
-    border-top: 1px solid $hr-color;
+    border-top: 1px solid $base-color;
     margin: 1em 0;
     padding: 0;
 }
@@ -91,10 +90,6 @@ fieldset {
 
 textarea {
     resize: vertical;
-}
-
-img {
-    vertical-align: middle;
 }
 
 /* Typography */
@@ -216,6 +211,7 @@ strong {
 
 .word-wrap {
     overflow-wrap: break-word;
+    /* an alternate name for the overflow-wrap property */
     word-wrap: break-word;
     word-break: break-all;
 

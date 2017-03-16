@@ -26,16 +26,16 @@ html {
 
 /* placeholder color */
 ::-webkit-input-placeholder {
-  color: #cccccc;
+  color: #ccc;
 }
 
 ::-moz-placeholder {
-  color: #cccccc;
+  color: #ccc;
   opacity: 1;
 }
 
 :-ms-input-placeholder {
-  color: #cccccc;
+  color: #ccc;
 }
 
 /* hide clear button of a text / password input control (IE10+) */
@@ -83,10 +83,6 @@ fieldset {
 
 textarea {
   resize: vertical;
-}
-
-img {
-  vertical-align: middle;
 }
 
 /* Typography */
@@ -204,6 +200,7 @@ strong {
 
 .word-wrap {
   overflow-wrap: break-word;
+  /* an alternate name for the overflow-wrap property */
   word-wrap: break-word;
   word-break: break-all;
   -ms-hyphens: auto;
