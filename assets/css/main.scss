@@ -92,6 +92,18 @@ textarea {
     resize: vertical;
 }
 
+details,
+summary {
+    -webkit-appearance: none;
+    appearance: none;
+    outline: none;
+    list-style-type: none;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
 /* Typography */
 
 body  {
