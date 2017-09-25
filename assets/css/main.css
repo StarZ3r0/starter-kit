@@ -97,6 +97,10 @@ summary::-webkit-details-marker {
   display: none;
 }
 
+iframe[name=google_conversion_frame] {
+  display: none !important;
+}
+
 /* Typography */
 body {
   text-rendering: optimizeSpeed;
@@ -331,6 +335,14 @@ use:
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 100;
+}
+
+.grow {
+  transition: all .2s ease-in-out;
+}
+
+.grow:hover {
+  transform: scale(1.1);
 }
 
 /* Custom styles */
