@@ -311,6 +311,10 @@ use:
   h3 {
     page-break-after: avoid;
   }
+
+  .no-print, .no-print * {
+    display: none !important;
+  }
 }
 /* Components */
 /*
