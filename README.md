@@ -6,8 +6,9 @@ Boilerplate for starting to build web apps.
 - [ ] add grid system
 - [ ] styling form elements
 - [ ] add scss helper functions and mixins
-- [x] add html5 skeleton
 - [ ] improve accessibility
+- [ ] add webfont loader 
+- [x] add html5 skeleton
 
 ## License
 All parts of Starter kit are free to use under the [MIT license](http://opensource.org/licenses/MIT).

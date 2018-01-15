@@ -163,7 +163,7 @@ strong {
 /* Helper classes */
 
 .no-focus:focus {
-  outline-width: 0;
+    outline-width: 0;
 }
 
 .hidden {
@@ -230,6 +230,11 @@ strong {
     -ms-hyphens: auto;
     -webkit-hyphens: auto;
     hyphens: auto;
+}
+
+.page-break {
+    display: block;
+    page-break-before: always;
 }
 
 /* Responsive helpers  */
