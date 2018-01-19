@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="hu" dir="rtl">
+<html lang="hu" dir="ltr">
 <head>
     <meta charset="utf-8">
     <!-- use the latest rendering engine -->
@@ -19,6 +19,9 @@
 
     <!-- The language tag of your website is specified and related to the language of the current page. -->
     <link rel="alternate" href="https://es.example.com/" hreflang="es">
+
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="format-detection" content="address=no"/>
 
     <!-- Social meta -->
     <!-- Facebook Open Graph -->
@@ -49,10 +52,11 @@
     <link rel="dns-prefetch" href="//www.google-analytics.com">
 </head>
 <body>
-    <header>
+    <header role="banner">
         <h1>Lorem ipsum page</h1>
     </header>
-    <nav>
+
+    <nav role="navigation">
         <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">Archives</a></li>
@@ -60,7 +64,29 @@
         </ul>
     </nav>
 
-    <main>
+    <!-- breadcrumb with microdata -->
+    <ol itemscope itemtype="http://schema.org/BreadcrumbList">
+        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a itemscope itemtype="http://schema.org/Thing" itemprop="item" href="#">
+                <span itemprop="name">Books</span>
+            </a>
+            <meta itemprop="position" content="1" />
+        </li>
+        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a itemscope itemtype="http://schema.org/Thing" itemprop="item" href="#">
+                <span itemprop="name">Science Fiction</span>
+            </a>
+            <meta itemprop="position" content="2" />
+        </li>
+        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a itemscope itemtype="http://schema.org/Thing" itemprop="item" href="#">
+                <span itemprop="name">Ancillary Justice</span>
+            </a>
+            <meta itemprop="position" content="3" />
+        </li>
+    </ol>
+
+    <main role="main">
         <article>
             <h1>Lorem ipsum</h1>
             <p class="post-meta">Posted by John Doe on <time datetime="2015-11-20T14:54">2015.11.20. 14:54</time></p>
